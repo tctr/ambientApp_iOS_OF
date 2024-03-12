@@ -16,6 +16,9 @@ void ofApp::setup(){
 	volume = 0.15f;
 	pan = 0.5;
 	bNoise = false;
+    
+    	initialBufferSize = 256;
+    	sampleRate = 44100;
 		
 	lAudio = new float[initialBufferSize];
 	rAudio = new float[initialBufferSize];
@@ -29,10 +32,10 @@ void ofApp::setup(){
 	
 	ofSoundStreamSettings settings;
 	settings.setOutListener(this);
-	settings.sampleRate = 44100;
+	settings.sampleRate = sampleRate;
 	settings.numOutputChannels = 2;
 	settings.numInputChannels = 0;
-	settings.bufferSize = 512;
+	settings.bufferSize = initialBufferSize;
 	soundStream.setup(settings);
 	
 	ofSetFrameRate(60);
