@@ -11,11 +11,12 @@ void ofApp::setup(){
 	drawCounter = 0;
 	bufferCounter = 0;
 
-//	sound.load("sounds/beat.caf");
-//	sound.setLoop(true);
-//	sound.play();
-//	sound.setVolume(0);
-	
+    	//sound.load("sounds/beat.caf");
+    	sound.load("sounds/popisdead.mp3");
+	sound.setLoop(true);
+	sound.play();
+	sound.setVolume(0);
+    
 	ofSoundStreamSettings settings;
 	settings.setInListener(this);
 	settings.sampleRate = 44100;
@@ -23,7 +24,7 @@ void ofApp::setup(){
 	settings.numInputChannels = 1;
 	settings.numBuffers = 1;
 	settings.bufferSize = bufferSize;
-	soundStream.setup(settings);
+	//soundStream.setup(settings);
 
 }
 
@@ -76,7 +77,7 @@ void ofApp::exit(){
 
 //--------------------------------------------------------------
 void ofApp::touchDown(ofTouchEventArgs & touch){
-//	sound.setVolume(1.0);
+	sound.setVolume(1.0);
 }
 
 //--------------------------------------------------------------
