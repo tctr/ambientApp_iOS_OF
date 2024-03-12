@@ -1,3 +1,13 @@
+## This repo contains a modified version of openframeworks for iOS ( of_v0.12.0_ios_release from the zip download ) which includes :
+### - a few corrections in the sound examples
+### - my  iOS apps devs
+### - a few addons like ofxPd and a modified version of [ofxSoundObjects](https://github.com/tctr/iOS_ofxSoundObjects) added as submodules
+### - the modified version of ofxSoundObjects contains an example which compiles for iOS
+
+### ProjectGenerator and a couple of large files in ofxAssimpModelLoader have been removed of this repo for compliance with GitHub rules
+
+
+
 [openFrameworks](http://openframeworks.cc/)
 ================
 
