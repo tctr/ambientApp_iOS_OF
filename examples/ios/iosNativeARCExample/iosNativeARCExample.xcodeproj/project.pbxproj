@@ -1,0 +1,910 @@
+{
+	"archiveVersion": "1",
+	"classes": {},
+	"objectVersion": "46",
+	"objects": {
+		"04290E6C-332F-4275-8AE2-B6876442EEC3": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "CircleAppViewController.mm",
+			"path": "src/AppViewControllers/CircleAppViewController.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"06932225-AB7C-4373-BE4C-03E3A4B886F1": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "SquareAppViewController.mm",
+			"path": "src/AppViewControllers/SquareAppViewController.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"1125C939-6E03-4429-B8AF-56897071B2BE": {
+			"children": [
+				"46B0AFB5-ECFA-4559-906B-8A7D3DE697B7",
+				"F33544E6-42B8-45C3-83FE-60FB5ED3BF6E",
+				"E3F07E03-32EF-4449-A3D8-3BBCC0120A4F",
+				"A09A1CA9-F8E0-4C90-942F-F0F6DF1F076D"
+			],
+			"isa": "PBXGroup",
+			"name": "UI",
+			"path": "src/UI",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"17C2B6BB-72F3-4648-ABC3-1D200A9B3960": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "CircleApp.h",
+			"path": "src/Apps/CircleApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"19C28FACFE9D520D11CA2CBB": {
+			"children": [
+				"1D6058910D05DD3D006BFB54"
+			],
+			"isa": "PBXGroup",
+			"name": "Products",
+			"sourceTree": "<group>"
+		},
+		"1D30AB110D05D00D00671497": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "Foundation.framework",
+			"path": "System/Library/Frameworks/Foundation.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"1D60588D0D05DD3D006BFB54": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"9936F6101BFA4DEE00891288",
+				"9936F6121BFA65F100891288"
+			],
+			"isa": "PBXResourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"1D60588E0D05DD3D006BFB54": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"E4D8936E11527B74007E1F53",
+				"E4D8936F11527B74007E1F53",
+				"E98B4256-F3CC-4F96-9336-980F16DD9041",
+				"4051CD92-AD3D-4CB0-A84C-86D9C6D3B9C6",
+				"ECA503C5-0D8F-45E8-A08B-F9ACFF73B100",
+				"95F20F62-9DA6-41B1-A8DA-D0634103DC6E",
+				"CFA4A1EA-9EC9-4412-9AE0-4668487AA8AB",
+				"9A1804A9-693F-49A6-85BC-8B7BFE9633B8",
+				"E4EB220D-20A5-4705-A18F-B1D4BC7CFFDB",
+				"84F253E0-A016-4D3E-B29D-EF8B798BBD97",
+				"62CD3593-D64D-4BA8-B539-68DF4A0C5949",
+				"BC3892BF-B598-466E-A361-764125C6B09C"
+			],
+			"isa": "PBXSourcesBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"1D60588F0D05DD3D006BFB54": {
+			"buildActionMask": "2147483647",
+			"files": [
+				"9969E7561C782C4500DEF0F6",
+				"901808C12053638E004A7774",
+				"1D60589F0D05DD5A006BFB54",
+				"1DF5F4E00D08C38300B7A737",
+				"288765FD0DF74451002DB57D",
+				"BB16EBD20F2B2A9500518274",
+				"BB16EBD90F2B2AB500518274",
+				"BBE5EAB80F49AD8400F28951",
+				"53F323EB10A20EDB00E0DAE4",
+				"5326AEA810A23A0500278DE6",
+				"E41D400B13B39D2100A75A5D",
+				"E41D400C13B39D2100A75A5D",
+				"E41D400D13B39D2100A75A5D",
+				"E41D400E13B39D2100A75A5D",
+				"67DFA53619F92A69003B3434"
+			],
+			"isa": "PBXFrameworksBuildPhase",
+			"runOnlyForDeploymentPostprocessing": "0"
+		},
+		"1D6058900D05DD3D006BFB54": {
+			"buildConfigurationList": "1D6058960D05DD3E006BFB54",
+			"buildPhases": [
+				"1D60588D0D05DD3D006BFB54",
+				"1D60588E0D05DD3D006BFB54",
+				"1D60588F0D05DD3D006BFB54",
+				"9255DD331112741900D6945E"
+			],
+			"buildRules": [],
+			"dependencies": [
+				"E41D410413B3A11300A75A5D"
+			],
+			"isa": "PBXNativeTarget",
+			"name": "iosNativeARCExample",
+			"productName": "iPhone",
+			"productReference": "1D6058910D05DD3D006BFB54",
+			"productType": "com.apple.product-type.application"
+		},
+		"1D6058910D05DD3D006BFB54": {
+			"explicitFileType": "wrapper.application",
+			"includeInIndex": "0",
+			"isa": "PBXFileReference",
+			"path": "iosNativeARCExample.app",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"1D6058940D05DD3E006BFB54": {
+			"buildSettings": {
+				"ALWAYS_SEARCH_USER_PATHS": "NO",
+				"ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+				"ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME": "",
+				"FRAMEWORK_SEARCH_PATHS": [
+					"$(inherited)",
+					"$(PROJECT_DIR)"
+				],
+				"GCC_PRECOMPILE_PREFIX_HEADER": "YES",
+				"GCC_PREFIX_HEADER": "ofxiOS_Prefix.pch",
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src/AppViewControllers",
+					"src/Apps",
+					"src/UI",
+					"src"
+				],
+				"INFOPLIST_FILE": "ofxiOS-Info.plist",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)"
+				],
+				"PRODUCT_NAME": "${TARGET_NAME}",
+				"TARGETED_DEVICE_FAMILY": "1,2",
+				"VALID_ARCHS": "$(ARCHS_STANDARD)"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"1D6058950D05DD3E006BFB54": {
+			"buildSettings": {
+				"ASSETCATALOG_COMPILER_APPICON_NAME": "AppIcon",
+				"ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME": "",
+				"FRAMEWORK_SEARCH_PATHS": [
+					"$(inherited)",
+					"$(PROJECT_DIR)"
+				],
+				"GCC_PRECOMPILE_PREFIX_HEADER": "YES",
+				"GCC_PREFIX_HEADER": "ofxiOS_Prefix.pch",
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]": "NO",
+				"HEADER_SEARCH_PATHS": [
+					"$(OF_CORE_HEADERS)",
+					"src",
+					"src/AppViewControllers",
+					"src/Apps",
+					"src/UI",
+					"src"
+				],
+				"INFOPLIST_FILE": "ofxiOS-Info.plist",
+				"OTHER_LDFLAGS": [
+					"$(OF_CORE_LIBS)",
+					"$(OF_CORE_FRAMEWORKS)"
+				],
+				"PRODUCT_NAME": "${TARGET_NAME}",
+				"TARGETED_DEVICE_FAMILY": "1,2",
+				"VALID_ARCHS": "$(ARCHS_STANDARD)"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"1D6058960D05DD3E006BFB54": {
+			"buildConfigurations": [
+				"1D6058940D05DD3E006BFB54",
+				"1D6058950D05DD3E006BFB54"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"1D60589F0D05DD5A006BFB54": {
+			"fileRef": "1D30AB110D05D00D00671497",
+			"isa": "PBXBuildFile"
+		},
+		"1DF5F4DF0D08C38300B7A737": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "UIKit.framework",
+			"path": "System/Library/Frameworks/UIKit.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"1DF5F4E00D08C38300B7A737": {
+			"fileRef": "1DF5F4DF0D08C38300B7A737",
+			"isa": "PBXBuildFile"
+		},
+		"288765FC0DF74451002DB57D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreGraphics.framework",
+			"path": "System/Library/Frameworks/CoreGraphics.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"288765FD0DF74451002DB57D": {
+			"fileRef": "288765FC0DF74451002DB57D",
+			"isa": "PBXBuildFile"
+		},
+		"29B97313FDCFA39411CA2CEA": {
+			"attributes": {
+				"LastUpgradeCheck": "0600"
+			},
+			"buildConfigurationList": "C01FCF4E08A954540054247B",
+			"compatibilityVersion": "Xcode 3.2",
+			"developmentRegion": "en",
+			"hasScannedForEncodings": "1",
+			"isa": "PBXProject",
+			"knownRegions": [
+				"en",
+				"Base"
+			],
+			"mainGroup": "29B97314FDCFA39411CA2CEA",
+			"projectDirPath": "",
+			"projectReferences": [
+				{
+					"ProductGroup": "E41D40FE13B3A0D800A75A5D",
+					"ProjectRef": "E41D40FD13B3A0D800A75A5D"
+				}
+			],
+			"projectRoot": "",
+			"targets": [
+				"1D6058900D05DD3D006BFB54"
+			]
+		},
+		"29B97314FDCFA39411CA2CEA": {
+			"children": [
+				"9936F60E1BFA4DEE00891288",
+				"E4D8936A11527B74007E1F53",
+				"BB24E1F710DAA51900E9C588",
+				"BB16F26B0F2B646B00518274",
+				"BB16E9930F2B1E5900518274",
+				"19C28FACFE9D520D11CA2CBB",
+				"901808C02053638E004A7774"
+			],
+			"isa": "PBXGroup",
+			"name": "CustomTemplate",
+			"sourceTree": "<group>"
+		},
+		"29B97323FDCFA39411CA2CEA": {
+			"children": [
+				"67DFA53419F92A5E003B3434",
+				"901808BF2053636F004A7774",
+				"BBE5EAB70F49AD8400F28951",
+				"E41D400613B39D2100A75A5D",
+				"E4A823A312561BE3002F86A2",
+				"5326AEA710A23A0500278DE6",
+				"E41D400713B39D2100A75A5D",
+				"9969E7551C782C4500DEF0F6",
+				"E41D400813B39D2100A75A5D",
+				"1D30AB110D05D00D00671497",
+				"E41D400913B39D2100A75A5D",
+				"53F323EA10A20EDB00E0DAE4",
+				"BB16EBD10F2B2A9500518274",
+				"BB16EBD80F2B2AB500518274",
+				"1DF5F4DF0D08C38300B7A737",
+				"288765FC0DF74451002DB57D"
+			],
+			"isa": "PBXGroup",
+			"name": "core frameworks",
+			"sourceTree": "<group>"
+		},
+		"32CA4F630368D1EE00C91783": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"path": "ofxiOS_Prefix.pch",
+			"sourceTree": "<group>"
+		},
+		"36AF3985-3834-42D7-9943-DB3F62C73807": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "SquareApp.mm",
+			"path": "src/Apps/SquareApp.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"3CF83C5F-9767-49FE-AAB7-9E70066A73CE": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImageAppViewController.h",
+			"path": "src/AppViewControllers/ImageAppViewController.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"4051CD92-AD3D-4CB0-A84C-86D9C6D3B9C6": {
+			"fileRef": "5E8BB142-EFB4-48D2-9563-DA961517860B",
+			"isa": "PBXBuildFile"
+		},
+		"46B0AFB5-ECFA-4559-906B-8A7D3DE697B7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "MyAppDelegate.h",
+			"path": "src/UI/MyAppDelegate.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5326AEA710A23A0500278DE6": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreLocation.framework",
+			"path": "System/Library/Frameworks/CoreLocation.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"5326AEA810A23A0500278DE6": {
+			"fileRef": "5326AEA710A23A0500278DE6",
+			"isa": "PBXBuildFile"
+		},
+		"53F323EA10A20EDB00E0DAE4": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "OpenAL.framework",
+			"path": "System/Library/Frameworks/OpenAL.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"53F323EB10A20EDB00E0DAE4": {
+			"fileRef": "53F323EA10A20EDB00E0DAE4",
+			"isa": "PBXBuildFile"
+		},
+		"548A298F-99DC-48F9-B0AA-1070B199C138": {
+			"children": [
+				"B08B1DE0-1E49-4C04-A8EC-37DFE8D0ACFA",
+				"04290E6C-332F-4275-8AE2-B6876442EEC3",
+				"3CF83C5F-9767-49FE-AAB7-9E70066A73CE",
+				"5E8BB142-EFB4-48D2-9563-DA961517860B",
+				"EF2877B9-3E46-4393-B3B2-64F618E92609",
+				"06932225-AB7C-4373-BE4C-03E3A4B886F1",
+				"5DD2947F-F613-408E-8DC4-6EA8029803D7",
+				"96B37566-1053-4453-9C3D-073623E15ACF"
+			],
+			"isa": "PBXGroup",
+			"name": "AppViewControllers",
+			"path": "src/AppViewControllers",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5DD2947F-F613-408E-8DC4-6EA8029803D7": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "TriangleAppViewController.h",
+			"path": "src/AppViewControllers/TriangleAppViewController.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"5E8BB142-EFB4-48D2-9563-DA961517860B": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImageAppViewController.mm",
+			"path": "src/AppViewControllers/ImageAppViewController.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"62CD3593-D64D-4BA8-B539-68DF4A0C5949": {
+			"fileRef": "F33544E6-42B8-45C3-83FE-60FB5ED3BF6E",
+			"isa": "PBXBuildFile"
+		},
+		"67DFA53419F92A5E003B3434": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "Accelerate.framework",
+			"path": "System/Library/Frameworks/Accelerate.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"67DFA53619F92A69003B3434": {
+			"fileRef": "67DFA53419F92A5E003B3434",
+			"isa": "PBXBuildFile"
+		},
+		"6948EE371B920CB800B5AC1A": {
+			"children": [],
+			"isa": "PBXGroup",
+			"name": "local_addons",
+			"sourceTree": "<group>"
+		},
+		"70CEC7FD-19BF-4248-B326-906DB77D3150": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "SquareApp.h",
+			"path": "src/Apps/SquareApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"84F253E0-A016-4D3E-B29D-EF8B798BBD97": {
+			"fileRef": "C0EFF05C-1E91-4030-A133-A0DCD6574056",
+			"isa": "PBXBuildFile"
+		},
+		"87028405-70DC-4368-80FB-D09AC914EF00": {
+			"children": [
+				"17C2B6BB-72F3-4648-ABC3-1D200A9B3960",
+				"A43B207D-C85C-4A2C-80E2-F2F1CB7F16B4",
+				"DBAE306E-DA2A-419A-88FE-03B608BEDBF3",
+				"A52F0597-6334-467B-AB5B-374B830F3E4B",
+				"70CEC7FD-19BF-4248-B326-906DB77D3150",
+				"36AF3985-3834-42D7-9943-DB3F62C73807",
+				"DB998392-7C83-4C92-B015-EC2FAE5F0706",
+				"C0EFF05C-1E91-4030-A133-A0DCD6574056"
+			],
+			"isa": "PBXGroup",
+			"name": "Apps",
+			"path": "src/Apps",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"901808BF2053636F004A7774": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "GLKit.framework",
+			"path": "System/Library/Frameworks/GLKit.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"901808C02053638E004A7774": {
+			"children": [],
+			"isa": "PBXGroup",
+			"name": "Frameworks",
+			"sourceTree": "<group>"
+		},
+		"901808C12053638E004A7774": {
+			"fileRef": "901808BF2053636F004A7774",
+			"isa": "PBXBuildFile"
+		},
+		"9255DD331112741900D6945E": {
+			"buildActionMask": "2147483647",
+			"files": [],
+			"inputPaths": [],
+			"isa": "PBXShellScriptBuildPhase",
+			"outputPaths": [],
+			"runOnlyForDeploymentPostprocessing": "0",
+			"shellPath": "/bin/sh",
+			"shellScript": "rsync -avz --exclude='.DS_Store' \"${SRCROOT}/bin/data/\" \"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}\"\n"
+		},
+		"95F20F62-9DA6-41B1-A8DA-D0634103DC6E": {
+			"fileRef": "96B37566-1053-4453-9C3D-073623E15ACF",
+			"isa": "PBXBuildFile"
+		},
+		"96B37566-1053-4453-9C3D-073623E15ACF": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "TriangleAppViewController.mm",
+			"path": "src/AppViewControllers/TriangleAppViewController.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"9936F60E1BFA4DEE00891288": {
+			"children": [
+				"9936F6111BFA65F100891288",
+				"9936F60F1BFA4DEE00891288"
+			],
+			"isa": "PBXGroup",
+			"path": "mediaAssets",
+			"sourceTree": "<group>"
+		},
+		"9936F60F1BFA4DEE00891288": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "folder.assetcatalog",
+			"path": "Images.xcassets",
+			"sourceTree": "<group>"
+		},
+		"9936F6101BFA4DEE00891288": {
+			"fileRef": "9936F60F1BFA4DEE00891288",
+			"isa": "PBXBuildFile"
+		},
+		"9936F6111BFA65F100891288": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "file.storyboard",
+			"path": "LaunchScreen.storyboard",
+			"sourceTree": "<group>"
+		},
+		"9936F6121BFA65F100891288": {
+			"fileRef": "9936F6111BFA65F100891288",
+			"isa": "PBXBuildFile"
+		},
+		"9969E7551C782C4500DEF0F6": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreMotion.framework",
+			"path": "System/Library/Frameworks/CoreMotion.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"9969E7561C782C4500DEF0F6": {
+			"fileRef": "9969E7551C782C4500DEF0F6",
+			"isa": "PBXBuildFile"
+		},
+		"9A1804A9-693F-49A6-85BC-8B7BFE9633B8": {
+			"fileRef": "A52F0597-6334-467B-AB5B-374B830F3E4B",
+			"isa": "PBXBuildFile"
+		},
+		"A09A1CA9-F8E0-4C90-942F-F0F6DF1F076D": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "MyAppViewController.mm",
+			"path": "src/UI/MyAppViewController.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A43B207D-C85C-4A2C-80E2-F2F1CB7F16B4": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "CircleApp.mm",
+			"path": "src/Apps/CircleApp.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"A52F0597-6334-467B-AB5B-374B830F3E4B": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImageApp.mm",
+			"path": "src/Apps/ImageApp.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"B08B1DE0-1E49-4C04-A8EC-37DFE8D0ACFA": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "CircleAppViewController.h",
+			"path": "src/AppViewControllers/CircleAppViewController.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"BB16E9930F2B1E5900518274": {
+			"children": [
+				"BBE5E94E0F497BD800F28951"
+			],
+			"isa": "PBXGroup",
+			"name": "libs",
+			"sourceTree": "<group>"
+		},
+		"BB16EBD10F2B2A9500518274": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "OpenGLES.framework",
+			"path": "System/Library/Frameworks/OpenGLES.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"BB16EBD20F2B2A9500518274": {
+			"fileRef": "BB16EBD10F2B2A9500518274",
+			"isa": "PBXBuildFile"
+		},
+		"BB16EBD80F2B2AB500518274": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "QuartzCore.framework",
+			"path": "System/Library/Frameworks/QuartzCore.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"BB16EBD90F2B2AB500518274": {
+			"fileRef": "BB16EBD80F2B2AB500518274",
+			"isa": "PBXBuildFile"
+		},
+		"BB16F26B0F2B646B00518274": {
+			"children": [],
+			"isa": "PBXGroup",
+			"name": "addons",
+			"sourceTree": "<group>"
+		},
+		"BB24DDC910DA781C00E9C588": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.plist.xml",
+			"path": "ofxiOS-Info.plist",
+			"sourceTree": "<group>"
+		},
+		"BB24E1F710DAA51900E9C588": {
+			"children": [
+				"E41D40FD13B3A0D800A75A5D",
+				"32CA4F630368D1EE00C91783",
+				"BB24DDC910DA781C00E9C588",
+				"E41D3EE513B3906D00A75A5D",
+				"6948EE371B920CB800B5AC1A",
+				"E41D3ED613B38FB500A75A5D"
+			],
+			"isa": "PBXGroup",
+			"name": "openFrameworks",
+			"sourceTree": "<group>"
+		},
+		"BBE5E94E0F497BD800F28951": {
+			"children": [
+				"29B97323FDCFA39411CA2CEA"
+			],
+			"isa": "PBXGroup",
+			"name": "core",
+			"sourceTree": "<group>"
+		},
+		"BBE5EAB70F49AD8400F28951": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "AudioToolbox.framework",
+			"path": "System/Library/Frameworks/AudioToolbox.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"BBE5EAB80F49AD8400F28951": {
+			"fileRef": "BBE5EAB70F49AD8400F28951",
+			"isa": "PBXBuildFile"
+		},
+		"BC3892BF-B598-466E-A361-764125C6B09C": {
+			"fileRef": "A09A1CA9-F8E0-4C90-942F-F0F6DF1F076D",
+			"isa": "PBXBuildFile"
+		},
+		"C01FCF4E08A954540054247B": {
+			"buildConfigurations": [
+				"C01FCF4F08A954540054247B",
+				"C01FCF5008A954540054247B"
+			],
+			"defaultConfigurationIsVisible": "0",
+			"defaultConfigurationName": "Release",
+			"isa": "XCConfigurationList"
+		},
+		"C01FCF4F08A954540054247B": {
+			"baseConfigurationReference": "E41D3ED613B38FB500A75A5D",
+			"buildSettings": {
+				"ALWAYS_SEARCH_USER_PATHS": "YES",
+				"CLANG_CXX_LIBRARY": "libc++",
+				"CODE_SIGN_IDENTITY": "",
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]": "iPhone Developer",
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "",
+				"COMPRESS_PNG_FILES": "NO",
+				"GCC_C_LANGUAGE_STANDARD": "c11",
+				"GCC_OPTIMIZATION_LEVEL": "0",
+				"GCC_SYMBOLS_PRIVATE_EXTERN": "NO",
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]": "NO",
+				"GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO": "NO",
+				"GCC_WARN_ABOUT_POINTER_SIGNEDNESS": "NO",
+				"GCC_WARN_ABOUT_RETURN_TYPE": "YES",
+				"GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL": "NO",
+				"GCC_WARN_PROTOTYPE_CONVERSION": "NO",
+				"GCC_WARN_UNUSED_VARIABLE": "YES",
+				"ONLY_ACTIVE_ARCH": "YES",
+				"PROVISIONING_PROFILE[sdk=iphoneos*]": "",
+				"SDKROOT": "iphoneos",
+				"TARGETED_DEVICE_FAMILY": "1",
+				"VALID_ARCHS": "$(ARCHS_STANDARD)",
+				"WARNING_LDFLAGS": "-no_arch_warnings"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Debug"
+		},
+		"C01FCF5008A954540054247B": {
+			"baseConfigurationReference": "E41D3ED613B38FB500A75A5D",
+			"buildSettings": {
+				"ALWAYS_SEARCH_USER_PATHS": "YES",
+				"CLANG_CXX_LIBRARY": "libc++",
+				"CODE_SIGN_IDENTITY": "",
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]": "iPhone Developer",
+				"CODE_SIGN_IDENTITY[sdk=iphonesimulator*]": "",
+				"COMPRESS_PNG_FILES": "NO",
+				"GCC_C_LANGUAGE_STANDARD": "c11",
+				"GCC_DYNAMIC_NO_PIC": "NO",
+				"GCC_GENERATE_DEBUGGING_SYMBOLS": "NO",
+				"GCC_OPTIMIZATION_LEVEL": "s",
+				"GCC_SYMBOLS_PRIVATE_EXTERN": "NO",
+				"GCC_THUMB_SUPPORT": "NO",
+				"GCC_WARN_64_TO_32_BIT_CONVERSION[arch=*64]": "NO",
+				"GCC_WARN_ABOUT_RETURN_TYPE": "YES",
+				"GCC_WARN_UNUSED_VARIABLE": "YES",
+				"ONLY_ACTIVE_ARCH": "NO",
+				"SDKROOT": "iphoneos",
+				"TARGETED_DEVICE_FAMILY": "1",
+				"VALID_ARCHS": "$(ARCHS_STANDARD)",
+				"WARNING_LDFLAGS": "-no_arch_warnings"
+			},
+			"isa": "XCBuildConfiguration",
+			"name": "Release"
+		},
+		"C0EFF05C-1E91-4030-A133-A0DCD6574056": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "TriangleApp.mm",
+			"path": "src/Apps/TriangleApp.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"CFA4A1EA-9EC9-4412-9AE0-4668487AA8AB": {
+			"fileRef": "A43B207D-C85C-4A2C-80E2-F2F1CB7F16B4",
+			"isa": "PBXBuildFile"
+		},
+		"DB998392-7C83-4C92-B015-EC2FAE5F0706": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "TriangleApp.h",
+			"path": "src/Apps/TriangleApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"DBAE306E-DA2A-419A-88FE-03B608BEDBF3": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "ImageApp.h",
+			"path": "src/Apps/ImageApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E3F07E03-32EF-4449-A3D8-3BBCC0120A4F": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "MyAppViewController.h",
+			"path": "src/UI/MyAppViewController.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E41D3ED613B38FB500A75A5D": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"path": "Project.xcconfig",
+			"sourceTree": "<group>"
+		},
+		"E41D3EE513B3906D00A75A5D": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "text.xcconfig",
+			"name": "CoreOF.xcconfig",
+			"path": "../../../libs/openFrameworksCompiled/project/ios/CoreOF.xcconfig",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E41D400613B39D2100A75A5D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "AVFoundation.framework",
+			"path": "System/Library/Frameworks/AVFoundation.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"E41D400713B39D2100A75A5D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreMedia.framework",
+			"path": "System/Library/Frameworks/CoreMedia.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"E41D400813B39D2100A75A5D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreVideo.framework",
+			"path": "System/Library/Frameworks/CoreVideo.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"E41D400913B39D2100A75A5D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "MapKit.framework",
+			"path": "System/Library/Frameworks/MapKit.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"E41D400B13B39D2100A75A5D": {
+			"fileRef": "E41D400613B39D2100A75A5D",
+			"isa": "PBXBuildFile"
+		},
+		"E41D400C13B39D2100A75A5D": {
+			"fileRef": "E41D400713B39D2100A75A5D",
+			"isa": "PBXBuildFile"
+		},
+		"E41D400D13B39D2100A75A5D": {
+			"fileRef": "E41D400813B39D2100A75A5D",
+			"isa": "PBXBuildFile"
+		},
+		"E41D400E13B39D2100A75A5D": {
+			"fileRef": "E41D400913B39D2100A75A5D",
+			"isa": "PBXBuildFile"
+		},
+		"E41D40FD13B3A0D800A75A5D": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.pb-project",
+			"name": "iOS+OFLib.xcodeproj",
+			"path": "../../../libs/openFrameworksCompiled/project/ios/iOS+OFLib.xcodeproj",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E41D40FE13B3A0D800A75A5D": {
+			"children": [
+				"E41D410213B3A0D800A75A5D"
+			],
+			"isa": "PBXGroup",
+			"name": "Products",
+			"sourceTree": "<group>"
+		},
+		"E41D410113B3A0D800A75A5D": {
+			"containerPortal": "E41D40FD13B3A0D800A75A5D",
+			"isa": "PBXContainerItemProxy",
+			"proxyType": "2",
+			"remoteGlobalIDString": "BB24DED610DA7A3F00E9C588",
+			"remoteInfo": "iPhone+OF Static Library"
+		},
+		"E41D410213B3A0D800A75A5D": {
+			"fileType": "archive.ar",
+			"isa": "PBXReferenceProxy",
+			"path": "libofxiOS_iphoneos_Debug.a",
+			"remoteRef": "E41D410113B3A0D800A75A5D",
+			"sourceTree": "BUILT_PRODUCTS_DIR"
+		},
+		"E41D410313B3A11300A75A5D": {
+			"containerPortal": "E41D40FD13B3A0D800A75A5D",
+			"isa": "PBXContainerItemProxy",
+			"proxyType": "1",
+			"remoteGlobalIDString": "BB24DE5C10DA7A3F00E9C588",
+			"remoteInfo": "iPhone+OF Static Library"
+		},
+		"E41D410413B3A11300A75A5D": {
+			"isa": "PBXTargetDependency",
+			"name": "iPhone+OF Static Library",
+			"targetProxy": "E41D410313B3A11300A75A5D"
+		},
+		"E4A823A312561BE3002F86A2": {
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "wrapper.framework",
+			"name": "CoreGraphics.framework",
+			"path": "System/Library/Frameworks/CoreGraphics.framework",
+			"sourceTree": "SDKROOT"
+		},
+		"E4D8936A11527B74007E1F53": {
+			"children": [
+				"E4D8936B11527B74007E1F53",
+				"E4D8936D11527B74007E1F53",
+				"E4D8936C11527B74007E1F53",
+				"548A298F-99DC-48F9-B0AA-1070B199C138",
+				"87028405-70DC-4368-80FB-D09AC914EF00",
+				"1125C939-6E03-4429-B8AF-56897071B2BE"
+			],
+			"isa": "PBXGroup",
+			"path": "src",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4D8936B11527B74007E1F53": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.objcpp",
+			"name": "main.mm",
+			"path": "src/main.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4D8936C11527B74007E1F53": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.c.h",
+			"name": "ofApp.h",
+			"path": "src/ofApp.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4D8936D11527B74007E1F53": {
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"lastKnownFileType": "sourcecode.cpp.objcpp",
+			"name": "ofApp.mm",
+			"path": "src/ofApp.mm",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"E4D8936E11527B74007E1F53": {
+			"fileRef": "E4D8936B11527B74007E1F53",
+			"isa": "PBXBuildFile"
+		},
+		"E4D8936F11527B74007E1F53": {
+			"fileRef": "E4D8936D11527B74007E1F53",
+			"isa": "PBXBuildFile"
+		},
+		"E4EB220D-20A5-4705-A18F-B1D4BC7CFFDB": {
+			"fileRef": "36AF3985-3834-42D7-9943-DB3F62C73807",
+			"isa": "PBXBuildFile"
+		},
+		"E98B4256-F3CC-4F96-9336-980F16DD9041": {
+			"fileRef": "04290E6C-332F-4275-8AE2-B6876442EEC3",
+			"isa": "PBXBuildFile"
+		},
+		"ECA503C5-0D8F-45E8-A08B-F9ACFF73B100": {
+			"fileRef": "06932225-AB7C-4373-BE4C-03E3A4B886F1",
+			"isa": "PBXBuildFile"
+		},
+		"EF2877B9-3E46-4393-B3B2-64F618E92609": {
+			"explicitFileType": "sourcecode.c.h",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "SquareAppViewController.h",
+			"path": "src/AppViewControllers/SquareAppViewController.h",
+			"sourceTree": "SOURCE_ROOT"
+		},
+		"F33544E6-42B8-45C3-83FE-60FB5ED3BF6E": {
+			"explicitFileType": "sourcecode.cpp.objcpp",
+			"fileEncoding": "4",
+			"isa": "PBXFileReference",
+			"name": "MyAppDelegate.mm",
+			"path": "src/UI/MyAppDelegate.mm",
+			"sourceTree": "SOURCE_ROOT"
+		}
+	},
+	"openFrameworksProjectGeneratorVersion": "21",
+	"rootObject": "29B97313FDCFA39411CA2CEA"
+}
