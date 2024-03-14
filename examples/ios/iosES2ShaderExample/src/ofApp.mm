@@ -5,7 +5,7 @@ void ofApp::setup(){
 	ofBackground(40);
 	ofSetVerticalSync(false);
 	ofEnableAlphaBlending();
-	ofSetLogLevel(OF_LOG_VERBOSE);
+	ofSetLogLevel(OF_LOG_VERBOSE);	
 	
 	shader.load("shaders/noise.vert", "shaders/noise.frag");
 	bUseShader = false;

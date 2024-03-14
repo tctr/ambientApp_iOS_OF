@@ -28,13 +28,19 @@ public:
     void gotFocus();
     void gotMemoryWarning();
     void deviceOrientationChanged(int newOrientation);
-
+	
+	ofShader shader;
+	
+	bool bUseShader;
+	ofTrueTypeFont font;
+	ofPoint mousePoint;
+    int fontSize;
+		
     ofSoundStream stream;
     ofxSoundOutput output;
 	// these are all subclasses of ofSoundObject
 	ofxSoundPlayerObject player;
 	waveformDraw wave;
-
 	
 //	vector<ofMesh> waveforms;
 	
