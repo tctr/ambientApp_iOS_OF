@@ -34,7 +34,7 @@ void ofApp::setup(){
         ofLogNotice() << ofToDataPath(dir.getPath(i), true );
     }
     
-    player.load( ofToDataPath("sounds/synth.mp3", true),
+    player.load( ofToDataPath("sounds/meditationApp_robertAntonWilson.mp3", true),
                 //set the following to true if you want to stream the audio data from the disk on demand instead of
                 //reading the whole file into memory. Default is false
                 false);
