@@ -3,9 +3,6 @@
 
 #include "ofxiOS.h"
 
-
-#include "waveformDraw.h"
-
 #include "ofxSoundPlayerObject.h"
 //#include "ofxGui.h"
 
@@ -40,11 +37,6 @@ public:
     ofxSoundOutput output;
 	// these are all subclasses of ofSoundObject
 	ofxSoundPlayerObject player;
-	waveformDraw wave;
-	
-//	vector<ofMesh> waveforms;
-	
-	waveformDraw fullFileWaveform;
 	
 	ofEventListener playerEndListener;
 	void playerEnded(size_t & id);

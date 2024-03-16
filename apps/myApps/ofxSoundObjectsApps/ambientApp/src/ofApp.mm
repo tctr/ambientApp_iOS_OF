@@ -48,17 +48,10 @@ void ofApp::setup(){
     stream.setOutput(output);
     //-------Sound stream setup end -------.
     
-
-    
-    fullFileWaveform.makeMeshFromBuffer( player.getSoundFile().getBuffer());
-    
-
-    // wave object will be part of the signal chain and will update on real time as the audio passes to the output
-    
     // --------- Audio signal chain setup.-------
     // Each of our objects need to connect to each other in order to create a signal chain, which ends with the output; the object that we set as the sound stream output.
 
-    player.connectTo(wave).connectTo(output);
+    player.connectTo(output);
 
     
     player.play();
@@ -125,10 +118,6 @@ void ofApp::touchDown(ofTouchEventArgs & touch){
 //--------------------------------------------------------------
 void ofApp::touchUp(ofTouchEventArgs & touch){
     bUseShader = false;
-    
-    if(fullFileWaveform.inside(touch.x, touch.y)){
-    player.setPositionMS(ofMap(touch.x, fullFileWaveform.getMinX(), fullFileWaveform.getMaxX(), 0, player.getDurationMS()));
-    }
 }
 
 //--------------------------------------------------------------
