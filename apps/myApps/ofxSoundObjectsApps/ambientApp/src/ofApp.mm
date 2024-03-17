@@ -14,7 +14,7 @@ void ofApp::setup(){
     bUseShader = true;
 
     //we load a font and tell OF to make outlines so we can draw it as GL shapes rather than textures
-    fontSize = ofGetWidth() / 4;
+    fontSize = ofGetWidth() / 5;
     font.load("type/verdana.ttf", fontSize, true, false, true, 0.4, 72);
     
     ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
@@ -91,7 +91,7 @@ void ofApp::update(){
 void ofApp::draw(){
 
     
-    ofSetOrientation(OF_ORIENTATION_90_RIGHT);//Set iOS to Orientation Landscape Right
+    //ofSetOrientation(OF_ORIENTATION_90_RIGHT);//Set iOS to Orientation Landscape Right
     
     ofPushStyle();
     ofSetColor(245, 58, 135);
@@ -106,10 +106,19 @@ void ofApp::draw(){
         shader.setUniform2f("mouse", mousePoint.x, mousePoint.y);       // we also pass in the mouse position
     }
     
+    /*
     ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
     int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen
     int y = (ofGetHeight() - rect.height) * 0.5 + fontSize/2;
-    font.drawStringAsShapes("meditate", x, y);
+    font.drawStringAsShapes("meditate", x, y);*/
+    
+    ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
+    int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen.
+    int padding = rect.height + 50;                                         // draw the text multiple times.
+    for(int y=rect.height; y<ofGetHeight(); y+=padding) {
+        font.drawStringAsShapes("meditate", x, y);
+    }
+
 
     if(bUseShader) {
         shader.end();
