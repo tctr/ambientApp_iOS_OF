@@ -47,7 +47,10 @@ public:
     float delayFeedback;
 		
 	ofxSoundMixer mixer;
-	vector<unique_ptr<ofxSoundPlayerObject>> players;
+    vector<unique_ptr<ofxSoundPlayerObject>> players;
+    vector<unique_ptr<ofxSoundPlayerObject>> playersphase2;
+    
+    int phase;
 	
     ofSoundStream stream;
 	
