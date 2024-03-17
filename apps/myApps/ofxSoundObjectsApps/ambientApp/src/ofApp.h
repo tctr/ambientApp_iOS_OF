@@ -4,9 +4,13 @@
 #include "ofxiOS.h"
 #include "ofxSoundMixer.h"
 #include "ofxSoundPlayerObject.h"
-//#include "ofxGui.h"
 
 #include "SineWaveGenerator.h"
+#include "NoiseGenerator.h"
+#include "LowPassFilter.h"
+#include "DigitalDelay.h"
+#include "ofxSoundObjects.h"
+
 
 class ofApp : public ofxiOSApp{
 
@@ -32,6 +36,15 @@ public:
 	ofTrueTypeFont font;
 	ofPoint mousePoint;
     int fontSize;
+    
+    
+    // these are all subclasses of ofSoundObject
+    NoiseGenerator noise;
+    LowPassFilter filter;
+    DigitalDelay delay;
+    
+    float filterCutoff;
+    float delayFeedback;
 		
 	ofxSoundMixer mixer;
 	vector<unique_ptr<ofxSoundPlayerObject>> players;

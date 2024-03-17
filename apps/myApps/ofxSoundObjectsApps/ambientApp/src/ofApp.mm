@@ -29,13 +29,6 @@ void ofApp::setup(){
         ofLogNotice() << ofToDataPath(dir.getPath(i), true );
     }
     
-    /*
-    player.load( ofToDataPath("sounds/meditationApp_robertAntonWilson.mp3", true),
-                //set the following to true if you want to stream the audio data from the disk on demand instead of
-                //reading the whole file into memory. Default is false
-                false);
-*/
-    
 	bool bLoadAsync = false;
     
     players.resize(dir.size());
@@ -56,11 +49,15 @@ void ofApp::setup(){
 		players[i]->connectTo(mixer);
     }
 
-
-
-
-
     //----- Loading sound player end -------.
+    
+    delay.setFeedback(0.8);
+    delay.setDelay(8192);
+    
+    
+    noise.connectTo(filter).connectTo(delay).connectTo(mixer);
+    
+    
 
     //----- Sound stream setup begin -------.
     ofSoundStreamSettings soundSettings;
@@ -135,6 +132,16 @@ void ofApp::touchMoved(ofTouchEventArgs & touch){
     // we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
     mousePoint.x = touch.x * 2 - ofGetWidth();
     mousePoint.y = ofGetHeight() * 0.5 - touch.y;
+    
+    float f = ofMap(touch.x, 0, ofGetWidth(), 0, 1, true);
+    // give the frequency a logarithmic scale.
+    f = f * f;
+    filterCutoff = ofMap(f, 0, 1, 50, 11025, true);
+    
+    filter.setParameters(filterCutoff, 0.9);
+    
+    delayFeedback = ofMap(touch.y, 0, ofGetHeight(), 0.99, 0.1, true);
+    delay.setFeedback(delayFeedback);
 }
 
 //--------------------------------------------------------------
