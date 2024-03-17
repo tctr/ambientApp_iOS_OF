@@ -2,7 +2,7 @@
 
 
 #include "ofxiOS.h"
-
+#include "ofxSoundMixer.h"
 #include "ofxSoundPlayerObject.h"
 //#include "ofxGui.h"
 
@@ -33,10 +33,10 @@ public:
 	ofPoint mousePoint;
     int fontSize;
 		
+	ofxSoundMixer mixer;
+	vector<unique_ptr<ofxSoundPlayerObject>> players;
+	
     ofSoundStream stream;
-    ofxSoundOutput output;
-	// these are all subclasses of ofSoundObject
-	ofxSoundPlayerObject player;
 	
 	ofEventListener playerEndListener;
 	void playerEnded(size_t & id);

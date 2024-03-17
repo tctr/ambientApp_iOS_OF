@@ -29,10 +29,36 @@ void ofApp::setup(){
         ofLogNotice() << ofToDataPath(dir.getPath(i), true );
     }
     
+    /*
     player.load( ofToDataPath("sounds/meditationApp_robertAntonWilson.mp3", true),
                 //set the following to true if you want to stream the audio data from the disk on demand instead of
                 //reading the whole file into memory. Default is false
                 false);
+*/
+    
+	bool bLoadAsync = false;
+    
+    players.resize(dir.size());
+    
+    for(int i = 0; i < dir.size(); i++){
+		cout << dir.getPath(i) << endl;
+        players[i] = make_unique<ofxSoundPlayerObject>();
+		players[i]->setLoop(true);
+		if(bLoadAsync){
+		//when you use loadAsync you will not be able to call play immediately after calling loadAsync, as it will not allow for such.
+		// so if you want to play the file immediately after it has finished loading you can pass a boolean as a second argument to loadAsync. True means play once loaded
+			players[i]->loadAsync(ofToDataPath(dir.getPath(i)), true);
+		}else{
+			players[i]->load(ofToDataPath(dir.getPath(i)));
+            players[i]->play();
+            players[i]->setLoop(true);
+		}
+		players[i]->connectTo(mixer);
+    }
+
+
+
+
 
     //----- Loading sound player end -------.
 
@@ -40,29 +66,13 @@ void ofApp::setup(){
     ofSoundStreamSettings soundSettings;
     soundSettings.numInputChannels = 0;
     soundSettings.numOutputChannels = 2;
-    soundSettings.sampleRate = player.getSoundFile().getSampleRate();
+    soundSettings.sampleRate = 44100; //player.getSoundFile().getSampleRate();
     soundSettings.bufferSize = 256;
     soundSettings.numBuffers = 1;
     stream.setup(soundSettings);
     
-    stream.setOutput(output);
-    //-------Sound stream setup end -------.
+    stream.setOutput(mixer);
     
-    // --------- Audio signal chain setup.-------
-    // Each of our objects need to connect to each other in order to create a signal chain, which ends with the output; the object that we set as the sound stream output.
-
-    player.connectTo(output);
-
-    
-    player.play();
-    
-    // set if you want to either have the player looping (playing over and over again) or not (stop once it reaches the its end).
-    player.setLoop(true);
-    
-    // the endEvent gets triggered when it reaches the end of the file, regardless of it being
-    // in looping or not
-    playerEndListener = player.endEvent.newListener(this, &ofApp::playerEnded);
-
 }
 //--------------------------------------------------------------
 void ofApp::playerEnded(size_t & id){
