@@ -57,6 +57,8 @@ void ofApp::setup(){
     
     noise.connectTo(filter).connectTo(delay).connectTo(mixer);
     
+    mixer.setChannelVolume(2, 0.5);
+    
     
 
     //----- Sound stream setup begin -------.
