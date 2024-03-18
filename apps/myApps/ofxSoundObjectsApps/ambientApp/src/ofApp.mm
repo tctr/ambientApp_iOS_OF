@@ -21,11 +21,13 @@ void ofApp::setup(){
     mousePoint.x = (ofGetWidth() - rect.width) * 0.5 +200;  // position in center screen
     mousePoint.y = (ofGetHeight() - rect.height) * 0.5;
 
+    phase = 1;
+    
     //----- Loading sound player begin -------.
 
     ofDirectory dir;
-    dir.listDir("sounds");
-    for(int i = 0; i < dir.size(); i ++){
+    sizedir1 = dir.listDir("sounds");
+    for(int i = 0; i < sizedir1; i ++){
         ofLogNotice() << ofToDataPath(dir.getPath(i), true );
     }
     
@@ -33,7 +35,7 @@ void ofApp::setup(){
     
     players.resize(dir.size());
     
-    for(int i = 0; i < dir.size(); i++){
+    for(int i = 0; i < sizedir1; i++){
 		cout << dir.getPath(i) << endl;
         players[i] = make_unique<ofxSoundPlayerObject>();
 		players[i]->setLoop(true);
@@ -49,18 +51,40 @@ void ofApp::setup(){
 		players[i]->connectTo(mixer);
     }
 
+    
+    noise.connectTo(filter).connectTo(delay).connectTo(mixer);
+    
+    ofDirectory dir2;
+    dir2.listDir("sounds2");
+    sizedir2 = dir2.size();
+    for(int i = 0; i < sizedir2; i ++){
+        ofLogNotice() << ofToDataPath(dir.getPath(i), true );
+    }
+    
+    playersphase2.resize(sizedir2);
+    
+    for(int i = 0; i < dir2.size(); i++){
+        cout << dir2.getPath(i) << endl;
+        playersphase2[i] = make_unique<ofxSoundPlayerObject>();
+        playersphase2[i]->load(ofToDataPath(dir2.getPath(i)));
+        playersphase2[i]->play();
+        playersphase2[i]->setLoop(true);
+        playersphase2[i]->connectTo(mixer);
+    }
+
+    
     //----- Loading sound player end -------.
     
     delay.setFeedback(0.8);
     delay.setDelay(8192);
     
     
-    noise.connectTo(filter).connectTo(delay).connectTo(mixer);
+    mixer.setConnectionVolume(0, 1.); // medidate
+    mixer.setConnectionVolume(1, 1.); // gamelan
+    mixer.setConnectionVolume(2, 1.); // noise
+    mixer.setConnectionVolume(3, 0.); // be here now
+    mixer.setConnectionVolume(4, 0.); //
     
-    mixer.setChannelVolume(2, 0.5);
-    
-    
-
     //----- Sound stream setup begin -------.
     ofSoundStreamSettings soundSettings;
     soundSettings.numInputChannels = 0;
@@ -115,8 +139,19 @@ void ofApp::draw(){
     ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
     int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen.
     int padding = rect.height + 50;                                         // draw the text multiple times.
-    for(int y=rect.height; y<ofGetHeight(); y+=padding) {
-        font.drawStringAsShapes("meditate", x, y);
+    
+    if (phase==1) {
+        for(int y=rect.height; y<ofGetHeight(); y+=padding) {
+            font.drawStringAsShapes("meditate", x, y);
+        }
+    }
+    else {
+        int y=150; x= 50;
+        font.drawStringAsShapes("BE", x, y); y+=padding;
+        x = 100; font.drawStringAsShapes("HERE", x, y); y+=padding;
+        x = 150; font.drawStringAsShapes("NOW", x, y); y+=padding; y+=padding/2;
+        x = 100; font.drawStringAsShapes("MARS", x, y); y+=padding;
+        x= 25; font.drawStringAsShapes("COLLEGE", x, y);
     }
 
 
@@ -141,6 +176,8 @@ void ofApp::touchUp(ofTouchEventArgs & touch){
 //--------------------------------------------------------------
 void ofApp::touchMoved(ofTouchEventArgs & touch){
     // we have to transform the coords to what the shader is expecting which is 0,0 in the center and y axis flipped.
+    float height = ofGetHeight();
+    
     mousePoint.x = touch.x * 2 - ofGetWidth();
     mousePoint.y = ofGetHeight() * 0.5 - touch.y;
     
@@ -153,6 +190,20 @@ void ofApp::touchMoved(ofTouchEventArgs & touch){
     
     delayFeedback = ofMap(touch.y, 0, ofGetHeight(), 0.99, 0.1, true);
     delay.setFeedback(delayFeedback);
+    
+    if (mousePoint.x <-320 && mousePoint.y<-400 && phase==1) {
+        phase = 2;
+        mixer.setConnectionVolume(2, 0.);
+    }
+    
+    if (phase == 2) {
+        float vol1 = (mousePoint.y + height/2.) / height ;
+        mixer.setConnectionVolume(0,  (1.0 - vol1)*(1.0 - vol1));
+        mixer.setConnectionVolume(1,  (1.0 - vol1)*(1.0 - vol1));
+        mixer.setConnectionVolume(3,  vol1);
+        mixer.setConnectionVolume(4,  vol1);
+    }
+    
 }
 
 //--------------------------------------------------------------

@@ -50,6 +50,8 @@ public:
     vector<unique_ptr<ofxSoundPlayerObject>> players;
     vector<unique_ptr<ofxSoundPlayerObject>> playersphase2;
     
+    int sizedir1, sizedir2;
+    
     int phase;
 	
     ofSoundStream stream;
