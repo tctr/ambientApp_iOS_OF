@@ -1,5 +1,9 @@
 ## This repo contains the source code of ambientApp, a soundart app I made during my stay at Mars College 2024
-## 
+
+### Demo video : it's a sound app, pump up the volume ! 
+
+https://github.com/tctr/ambientApp_iOS_OF/assets/32341117/61405047-5e4e-4e07-9eb1-4b71a138ac40
+
 ## ambientApp is based on a modified version of openframeworks for iOS ( of_v0.12.0_ios_release from the zip download ) which includes :
 ### - a few corrections in the sound examples
 ### - my  iOS apps devs
