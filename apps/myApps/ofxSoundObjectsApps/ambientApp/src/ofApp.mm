@@ -170,7 +170,7 @@ void ofApp::touchDown(ofTouchEventArgs & touch){
 
 //--------------------------------------------------------------
 void ofApp::touchUp(ofTouchEventArgs & touch){
-    bUseShader = false;
+   // bUseShader = false;
 }
 
 //--------------------------------------------------------------
