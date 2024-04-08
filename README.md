@@ -1,4 +1,6 @@
-## This repo contains a modified version of openframeworks for iOS ( of_v0.12.0_ios_release from the zip download ) which includes :
+## This repo contains the source code of ambientApp, a soundart app I made during my stay at Mars College 2024
+## 
+## ambientApp is based on a modified version of openframeworks for iOS ( of_v0.12.0_ios_release from the zip download ) which includes :
 ### - a few corrections in the sound examples
 ### - my  iOS apps devs
 ### - a few addons like ofxPd and a modified version of [ofxSoundObjects](https://github.com/tctr/iOS_ofxSoundObjects) added as submodules
