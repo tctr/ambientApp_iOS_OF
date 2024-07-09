@@ -136,22 +136,43 @@ void ofApp::draw(){
     int y = (ofGetHeight() - rect.height) * 0.5 + fontSize/2;
     font.drawStringAsShapes("meditate", x, y);*/
     
-    ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
-    int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen.
-    int padding = rect.height + 50;                                         // draw the text multiple times.
-    
     if (phase==1) {
-        for(int y=rect.height; y<ofGetHeight(); y+=padding) {
+        ofRectangle rect = font.getStringBoundingBox("meditate", 0, 0);   // size of text.
+        int y_offset = 1.1*rect.height;
+        int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen.
+        int padding = 1.1*fontSize;
+        for(int y=y_offset; y<ofGetHeight(); y+=padding) {
             font.drawStringAsShapes("meditate", x, y);
         }
+
     }
     else {
-        int y=150; x= 50;
-        font.drawStringAsShapes("BE", x, y); y+=padding;
-        x = 100; font.drawStringAsShapes("HERE", x, y); y+=padding;
-        x = 150; font.drawStringAsShapes("NOW", x, y); y+=padding; y+=padding/2;
-        x = 100; font.drawStringAsShapes("MARS", x, y); y+=padding;
-        x= 25; font.drawStringAsShapes("COLLEGE", x, y);
+	  	ofRectangle rect = font.getStringBoundingBox("Be Here Now", 0, 0);   // size of text.
+        int x = (ofGetWidth() - rect.width) * 0.5;                              // position in center screen
+        int y = (ofGetHeight() - rect.height) * 0.5 + fontSize/2;
+
+        int x_step = ofGetWidth() / 4;
+        int y_step = ofGetHeight() / 4;
+        x = 20;
+        int y_offset = fmax(1.1*fontSize, ofGetHeight() / 6);
+        int delta_y = 1.2*fontSize;
+        font.drawStringAsShapes("Be", x, y_offset);
+
+        x = x_step;
+        y = y_offset + delta_y;
+        font.drawStringAsShapes("Here", x, y);
+
+        x = x_step*2 ;
+        y = y + delta_y;
+        font.drawStringAsShapes("Now", x, y);
+
+
+        x = 20 ; y = y_step*2.5;
+        font.drawStringAsShapes("Mars", x, y);
+
+        x = x_step / 2 ; y = y + delta_y;
+        font.drawStringAsShapes("College", x, y);
+
     }
 
 
@@ -191,7 +212,9 @@ void ofApp::touchMoved(ofTouchEventArgs & touch){
     delayFeedback = ofMap(touch.y, 0, ofGetHeight(), 0.99, 0.1, true);
     delay.setFeedback(delayFeedback);
     
-    if (mousePoint.x <-320 && mousePoint.y<-400 && phase==1) {
+    float kScreen = 0.08f;
+    
+    if ( ( touch.x < ofGetWidth()*kScreen ) && (touch.y > ofGetHeight()*(1.0f-kScreen) ) && phase==1) {
         phase = 2;
         mixer.setConnectionVolume(2, 0.);
     }
@@ -202,6 +225,16 @@ void ofApp::touchMoved(ofTouchEventArgs & touch){
         mixer.setConnectionVolume(1,  (1.0 - vol1)*(1.0 - vol1));
         mixer.setConnectionVolume(3,  vol1);
         mixer.setConnectionVolume(4,  vol1);
+        
+        // back to phase 1
+        if ( touch.x > ofGetWidth()*(1.0f-kScreen) && touch.y > ofGetHeight()*(1.0f-kScreen) ) {
+            phase = 1;
+            mixer.setConnectionVolume(0, 1.); // medidate
+            mixer.setConnectionVolume(1, 1.); // gamelan
+            mixer.setConnectionVolume(2, 0.5); // noise
+            mixer.setConnectionVolume(3, 0.); // be here now
+            mixer.setConnectionVolume(4, 0.); //
+        }
     }
     
 }
